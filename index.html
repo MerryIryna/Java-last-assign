@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer with Flying Objects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <select id="duration" class="control-button">
+                <option value="30000">30 seconds</option>
+                <option value="60000">60 seconds</option>
+                <option value="90000">90 seconds</option>
+            </select>
+            <button id="start-btn" class="control-button">Start</button>
+            <button id="pause-btn" class="control-button">Pause</button>
+            <button id="stop-btn" class="control-button">Stop</button>
+            <button id="reset-btn" class="control-button">Reset</button>
+        </div>
+
+        <div class="timer-container">
+            <div id="timer-display">00:00:00</div>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div id="game-board"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
